@@ -19,7 +19,7 @@ body {
 
 nav {
     width: 100%;
-    margin-top: 75px;
+    margin-top: 25px;
     margin-left: 0%;
     margin-right: 20%;
     margin-bottom: 0%;
@@ -48,7 +48,7 @@ ul#nav {
 }
 
 #wrapper {
-    height: 170px;
+    height: 250px;
     position: relative;
 }
 
@@ -65,7 +65,7 @@ hr.horizontal {
     height: 100%;
     background-color:#d99a6e;
     position:absolute;
-    top: 199px;
+    top: 279px;
     bottom:0;
     left:10%;
     display: inline-block;
@@ -110,8 +110,10 @@ hr.horizontal {
 }
 
 .icons {
-  margin-left: 17%;
+  margin-left: 30%;
+  margin-top: 100px;
   display: block;
+  position: absolute;
 }
 
 .icon {
@@ -135,32 +137,33 @@ a {
   text-decoration: none;
 }
 
-#welcomeText {
-  margin-top: 50px;
-  margin-right: 17%;
-  margin-left: 7%;
-  font-family: verdana, arial, sans-serif;
-  color: #787878;
-  font-size: 14px;
-  line-height: 1.4em;
+.printIcons {
+  width: 100%;
+  margin-top: -20px;
+  right: 10%;
+  display: block;
+  position: absolute;
 }
 
-p.quote {
-    font-family: verdana, arial, sans-serif;
-    font-size: 200%;
-    margin-bottom: 0;
-    margin-top: 40px;
-    margin-right: 17%;
-    text-align: right;
-    color: #b0b0b0;
+.printIcon {
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #d99a6e;
+  float: right;
+  margin-left: 1vw;
 }
 
-p.attribution {
-    font-family: verdana, arial, sans-serif;
-    font-size: 100%;
-    font-style: italic;
-    text-align: right;
-    margin-right: 17%;
-    color: #787878;
 
+.smallCircle {
+  width: 4vw;
+  height: auto;
+  border-radius: 50%;
+  float: right;
+  display: inline-block;
+  visibility: hidden;
+}
+
+.smallCircle:hover,
+.printIcon:hover .smallCircle{
+    visibility: visible;
 }
