@@ -1,0 +1,171 @@
+html {
+    height: 100%;
+}
+
+#logo {
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 7%;
+    height: 150px;
+    width: auto;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+nav {
+    width: 100%;
+    margin-top: 75px;
+    margin-left: 0%;
+    margin-right: 20%;
+    margin-bottom: 0%;
+    position: fixed;
+}
+
+ul#nav {
+    list-style: none;
+    margin: 0 5%;
+    padding: 0;
+}
+
+#nav a {
+    display: block;
+    float: right;
+    color: #b0b0b0;
+    font-family: verdana, arial, sans-serif;
+    font-size: 85%;
+    letter-spacing: 4px;
+    margin: 0 2%;
+    text-decoration: none;
+}
+
+#nav a:hover {
+  color: #d99a6e;
+}
+
+#wrapper {
+    margin-top: -245px;
+    padding-top: 30px;
+    height: 189px;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+}
+
+#horizontal {
+  margin-top: 179px;
+  height: 1px;
+  background-color: #d99a6e;
+  color: #d99a6e;
+  border: none;
+}
+#horizontal2 {
+  margin-top: 7px;
+  height: 1px;
+  background-color: #d99a6e;
+  color: #d99a6e;
+  border: none;
+}
+
+.vertLine {
+    width:1px;
+    height: 100%;
+    background-color:#d99a6e;
+    position:fixed;
+    top: 199px;
+    bottom:0;
+    left:10%;
+    display: inline-block;
+}
+
+#copyright {
+    position: fixed;
+    margin-top: 209px;
+    top: 275px;
+    left: 9%;
+    height: auto;
+    width: 500px;
+}
+
+.copyright-text {
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    color: #b0b0b0;
+    font-family: verdana, arial, sans-serif;
+    font-size: 75%;
+}
+
+.container {
+  margin-top: 245px;
+}
+
+.headline {
+  margin-top: -10px;
+  margin-left: 15%;
+  margin-bottom: 10px;
+  font-family: verdana, arial, sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: #b0b0b0;
+}
+
+.subhead {
+  margin-left: 15%;
+  margin-bottom: 10px;
+  font-family: verdana, arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #d99a6e;
+}
+
+.body-text {
+  margin-top: 0;
+  margin-left: 15%;
+  margin-right: 17%;
+  font-family: verdana, arial, sans-serif;
+  color: #787878;
+  font-size: 12px;
+  line-height: 1.4em;
+}
+
+.sub-section {
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 17%;
+  margin-bottom: 0;
+  font-family: verdana, arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.4em;
+}
+
+.section {
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 17%;
+  margin-bottom: 0;
+  font-family: verdana, arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+#rogersInspiration {
+  margin-left: 15%;
+  max-width: 30%;
+  height: auto;
+}
+
+#rogerslogo {
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-bottom: 10px;
+  max-width: 15%;
+  height: auto;
+}

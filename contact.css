@@ -87,82 +87,77 @@ hr.horizontal {
     font-size: 75%;
 }
 
-#circle {
-  margin-left: 2%;
-  width: 100%;
-  max-width: 135px;
-  display: inline-block;
-  height: auto;
-  border-radius: 50%;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-
-}
-
-.icon:hover #circle{
-  filter: none;
-  width: 100%;
-  max-width: 135px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.icon:hover #printText {
-  color: #d99a6e;
-}
-
-.icons {
-  margin-left: 17%;
-  display: block;
-}
-
-.icon {
-  text-align: center;
-  width: 15%;
-  display: inline-block;
-  margin-left: 2%;
-}
-
-#printText {
-  margin: 0;
-  margin-top: 5px;
-  margin-left: 7px;
+.headline {
+  margin-top: -10px;
+  margin-left: 15%;
+  margin-bottom: 10px;
   font-family: verdana, arial, sans-serif;
-  font-size: 75%;
-  letter-spacing: 3px;
+  font-size: 32px;
+  letter-spacing: 1px;
   color: #b0b0b0;
 }
 
-a {
-  text-decoration: none;
+.subhead {
+  margin-left: 15%;
+  margin-bottom: 0%;
+  font-family: verdana, arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #d99a6e;
 }
 
-#welcomeText {
-  margin-top: 50px;
-  margin-right: 17%;
-  margin-left: 7%;
+.info {
+  margin-top: 7px;
+  margin-left: 15%;
+  margin-right: 30%;
   font-family: verdana, arial, sans-serif;
   color: #787878;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4em;
 }
 
-p.quote {
-    font-family: verdana, arial, sans-serif;
-    font-size: 200%;
-    margin-bottom: 0;
-    margin-top: 40px;
-    margin-right: 17%;
-    text-align: right;
-    color: #b0b0b0;
+form {
+  margin-left: 15%;
 }
 
-p.attribution {
-    font-family: verdana, arial, sans-serif;
-    font-size: 100%;
-    font-style: italic;
-    text-align: right;
-    margin-right: 17%;
-    color: #787878;
+.subhead-table {
+  margin-top: 5px;
+  margin-bottom: 7px;
+  font-family: verdana, arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #d99a6e;
+}
 
+.info-table {
+  margin-top: 7px;
+  font-family: verdana, arial, sans-serif;
+  color: #787878;
+  font-size: 12px;
+  line-height: 1.4em;
+}
+
+input[type=submit], input[type=reset]{
+    background-color: #d99a6e;
+    font-family: verdana, arial, sans-serif;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 2px 4px;
+    cursor: pointer;
+}
+
+a {
+  color: #787878;
+}
+
+#thanks {
+  margin-left: 15%;
+  margin-right: 30%;
+  margin-top: 30px;
+  margin-bottom: 0%;
+  font-family: verdana, arial, sans-serif;
+  font-size: 18px;
+  color: #d99a6e;
 }

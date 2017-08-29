@@ -88,8 +88,8 @@ hr.horizontal {
 }
 
 #circle {
-  margin-left: 2%;
   width: 100%;
+  max-width: 140px;
   display: inline-block;
   height: auto;
   border-radius: 50%;
@@ -98,25 +98,29 @@ hr.horizontal {
 
 }
 
-.icon:hover #circle{
+.icon:hover #circle,
+.iconActive #circle {
   filter: none;
   width: 100%;
+  max-width: 140px;
   height: auto;
   border-radius: 50%;
 }
 
-.icon:hover #printText {
+.icon:hover #printText,
+.active #printText {
   color: #d99a6e;
 }
 
 .icons {
-  margin-left: 30%;
+  right: 7%;
   margin-top: 100px;
   display: block;
   position: absolute;
 }
 
 .icon {
+  float: right;
   text-align: center;
   width: 15%;
   display: inline-block;
@@ -133,6 +137,14 @@ hr.horizontal {
   color: #b0b0b0;
 }
 
+.headline {
+  margin-top: -20px;
+  margin-left: 15%;
+  font-family: verdana, arial, sans-serif;
+  font-size: 32px;
+  color: #b0b0b0;
+}
+
 a {
   text-decoration: none;
 }
@@ -140,7 +152,7 @@ a {
 .printIcons {
   width: 100%;
   margin-top: -20px;
-  right: 10%;
+  right: 7%;
   display: block;
   position: absolute;
 }
@@ -166,4 +178,34 @@ a {
 .smallCircle:hover,
 .printIcon:hover .smallCircle{
     visibility: visible;
+}
+
+.smallCircleActive .smallCircle{
+  visibility: visible;
+}
+
+#sunServicesBrochure,
+#lcbAd,
+#falconstorSolBroch,
+#hycreteDataSheet,
+#quenchCoffeePackets {
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+#sunServicesimg,
+#lcbSpring2017Ad,
+#falconstorSolGuide,
+#hycreteDataImage,
+#quenchCoffeeImage {
+  width: auto;
+  max-height: 77vh;
+  max-width: 80vw;
+  margin-left: -2%;
+}
+
+.title {
+  /*margin-left: 2%;*/
+  font-family: verdana, arial, sans-serif;
+  color: #d99a6e;
 }
