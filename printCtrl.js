@@ -4,7 +4,7 @@ angular
     $scope.currentDiv = ""
 
     $scope.onload = function(){
-      $scope.currentDiv = "sunServicesBrochure"
+      $scope.currentDiv = "falconstorSolBroch"
     }
 
     $scope.isCurrent = function(divName){

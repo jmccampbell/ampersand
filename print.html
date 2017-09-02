@@ -35,10 +35,10 @@
             <p id="printText">LARGE</p>
           </div>
         </a>
-        <a href="web.html">
+        <a href="digital.html">
           <div class="icon">
             <img id="circle" src="images/webCircle.jpg">
-            <p id="printText">WEB</p>
+            <p id="printText">DIGITAL</p>
           </div>
         </a>
         <a href="logos.html">
@@ -64,17 +64,17 @@
     &nbsp;
     </div>
     <div class="printIcons">
-      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('none6') }" ng-click="changeDiv('none6')">
-        <img class="smallCircle" src="images/printCircle.jpg">
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('j2sBook') }" ng-click="changeDiv('j2sBook')">
+        <img class="smallCircle" src="images/j2sDot.jpg">
       </span>
-      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('none5') }" ng-click="changeDiv('none5')">
-        <img class="smallCircle" src="images/printCircle.jpg">
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('bylinesMagazine') }" ng-click="changeDiv('bylinesMagazine')">
+        <img class="smallCircle" src="images/bylinesDot.jpg">
       </span>
-      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('none4') }" ng-click="changeDiv('none4')">
-        <img class="smallCircle" src="images/printCircle.jpg">
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('falconstorRoomDrop') }" ng-click="changeDiv('falconstorRoomDrop')">
+        <img class="smallCircle" src="images/falconstorRoomDropDot.jpg">
       </span>
-      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('none3') }" ng-click="changeDiv('none3')">
-        <img class="smallCircle" src="images/printCircle.jpg">
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('pvamfBrochure') }" ng-click="changeDiv('pvamfBrochure')">
+        <img class="smallCircle" src="images/pvamfBrochureDot.jpg">
       </span>
       <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('quenchCoffeePackets') }" ng-click="changeDiv('quenchCoffeePackets')">
         <img class="smallCircle" src="images/quenchCoffeeDot.jpg">
@@ -82,36 +82,52 @@
       <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('hycreteDataSheet') }" ng-click="changeDiv('hycreteDataSheet')">
         <img class="smallCircle" src="images/hycreteDot.jpg">
       </span>
-      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('falconstorSolBroch') }" ng-click="changeDiv('falconstorSolBroch')">
-        <img class="smallCircle" src="images/falconstorDot.jpg">
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('sunServicesBrochure') }" ng-click="changeDiv('sunServicesBrochure')">
+        <img class="smallCircle" src="images/sunServiceBrochureDot.jpg">
       </span>
       <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('lcbAd') }" ng-click="changeDiv('lcbAd')">
         <img class="smallCircle" src="images/lcbDot.jpg">
       </span>
-      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('sunServicesBrochure') }" ng-click="changeDiv('sunServicesBrochure')">
-        <img class="smallCircle" src="images/sunServiceBrochureDot.jpg">
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('falconstorSolBroch') }" ng-click="changeDiv('falconstorSolBroch')">
+        <img class="smallCircle" src="images/falconstorDot.jpg">
       </span>
     </div>
     <p class="headline">PRINT</p>
-    <div ng-show="isCurrent('sunServicesBrochure')" id="sunServicesBrochure">
+    <div ng-show="isCurrent('sunServicesBrochure')" class="portfolioDiv">
       <p class="title">Sun Microsystems Storage Services Brochure</p>
-      <img id="sunServicesimg" src="images/sunServicesBrochure.jpg">
+      <img class="portfolioImage" src="images/sunServicesBrochure.jpg">
     </div>
-    <div ng-show="isCurrent('lcbAd')" id="lcbAd">
+    <div ng-show="isCurrent('lcbAd')" class="portfolioDiv">
       <p class="title">Longmont Concert Band Newspaper Ad</p>
-      <img id="lcbSpring2017Ad" src="images/lcbSpring2017Ad.jpg">
+      <img class="portfolioImage" src="images/lcbSpring2017Ad.jpg">
     </div>
-    <div ng-show="isCurrent('falconstorSolBroch')" id="falconstorSolBroch">
+    <div ng-show="isCurrent('falconstorSolBroch')" class="portfolioDiv">
       <p class="title">FalconStor Solutions Brochure</p>
-      <img id="falconstorSolGuide" src="images/falconstorSolutionGuide.jpg">
+      <img class="portfolioImage" src="images/falconstorSolutionGuide.jpg">
     </div>
-    <div ng-show="isCurrent('hycreteDataSheet')" id="hycreteDataSheet">
+    <div ng-show="isCurrent('hycreteDataSheet')" class="portfolioDiv">
       <p class="title">Hycrete Data Sheet</p>
-      <img id="hycreteDataImage" src="images/hycreteDataSheet.jpg">
+      <img class="portfolioImage" src="images/hycreteDataSheet.jpg">
     </div>
-    <div ng-show="isCurrent('quenchCoffeePackets')" id="quenchCoffeePackets">
+    <div ng-show="isCurrent('quenchCoffeePackets')" class="portfolioDiv">
       <p class="title">Quench Coffee Packets</p>
-      <img id="quenchCoffeeImage" src="images/quenchCoffeePackets.jpg">
+      <img class="portfolioImage" src="images/quenchCoffeePackets.jpg">
+    </div>
+    <div ng-show="isCurrent('falconstorRoomDrop')" class="portfolioDiv">
+      <p class="title">FalconStor/Sun Microsystems Sales Meeting Room Drop</p>
+      <img class="portfolioImage" src="images/falconstoreRoomDrop.jpg">
+    </div>
+    <div ng-show="isCurrent('pvamfBrochure')" class="portfolioDiv">
+      <p class="title">Praire View A&M University Foundation Brochure</p>
+      <img class="portfolioImage" src="images/pvamfBrochure.jpg">
+    </div>
+    <div ng-show="isCurrent('bylinesMagazine')" class="portfolioDiv">
+      <p class="title">ByLines Magazine (University of Colorado School of Journalism Alumi Magazine)</p>
+      <img class="portfolioImage" src="images/bylinesMagazine.jpg">
+    </div>
+    <div ng-show="isCurrent('j2sBook')" class="portfolioDiv">
+      <p class="title">Journey to the Stadium Coffee Table Book (160 pages)</p>
+      <img class="portfolioImage" src="images/j2sBook.jpg">
     </div>
   </body>
   </html>

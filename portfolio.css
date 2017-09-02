@@ -184,20 +184,12 @@ a {
   visibility: visible;
 }
 
-#sunServicesBrochure,
-#lcbAd,
-#falconstorSolBroch,
-#hycreteDataSheet,
-#quenchCoffeePackets {
+.portfolioDiv {
     margin-left: 15%;
     margin-top: 50px;
 }
 
-#sunServicesimg,
-#lcbSpring2017Ad,
-#falconstorSolGuide,
-#hycreteDataImage,
-#quenchCoffeeImage {
+.portfolioImage {
   width: auto;
   max-height: 77vh;
   max-width: 80vw;
