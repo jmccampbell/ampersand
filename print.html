@@ -6,11 +6,11 @@
 <title>Ampersand Design</title>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="app.js"></script>
-<script src="printCtrl.js"></script>
+<script src="portfolioCtrl.js"></script>
 <link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 
-<body ng-app="app" ng-controller="printCtrl" ng-init="onload()">
+<body ng-app="app" ng-controller="printCtrl" ng-init="onload('print')">
     <div id="wrapper">
       <img id="logo" src="images/ampersand-logo.jpg" width="167px" height="190px" alt="Ampersand Logo">
       <nav> <!--start of navigation div-->
@@ -41,10 +41,10 @@
             <p id="printText">DIGITAL</p>
           </div>
         </a>
-        <a href="logos.html">
+        <a href="brand.html">
           <div class="icon">
             <img id="circle" src="images/logosCircle.jpg">
-            <p id="printText">LOGOS</p>
+            <p id="printText">BRAND</p>
           </div>
         </a>
         <a href="print.html">

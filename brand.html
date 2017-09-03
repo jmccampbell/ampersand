@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Ampersand Design</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="portfolioCtrl.js"></script>
+<link rel="stylesheet" type="text/css" href="portfolio.css">
+</head>
+
+<body ng-app="app" ng-controller="printCtrl" ng-init="onload('brand')">
+    <div id="wrapper">
+      <img id="logo" src="images/ampersand-logo.jpg" width="167px" height="190px" alt="Ampersand Logo">
+      <nav> <!--start of navigation div-->
+          <ul id="nav">
+              <li><a href="contact.html" class="lastNav">CONTACT</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="print.html">WORK</a></li>
+              <li><a href="index.html">HOME</a></li>
+          </ul>
+      </nav> <!--end navigation div-->
+      <div class="icons">
+        <a href="tech.html">
+          <div class="icon">
+            <img id="circle" src="images/techCircle.jpg">
+            <p id="printText">TECH</p>
+          </div>
+        </a>
+        <a href="tradeShow.html">
+          <div class="icon">
+            <img id="circle" src="images/tradeshowCircle.jpg">
+            <p id="printText">LARGE</p>
+          </div>
+        </a>
+        <a href="digital.html">
+          <div class="icon">
+            <img id="circle" src="images/webCircle.jpg">
+            <p id="printText">DIGITAL</p>
+          </div>
+        </a>
+        <a href="brand.html">
+          <div class="icon iconActive">
+            <img id="circle" src="images/logosCircle.jpg">
+            <p id="printText">BRAND</p>
+          </div>
+        </a>
+        <a href="print.html">
+          <div class="icon">
+            <img id="circle" src="images/printCircle.jpg">
+            <p id="printText">PRINT</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <hr class="horizontal" />
+    <hr class="horizontal"/>
+    <div id="copyright">
+        <p class="copyright-text">&copy; 2016. Ampersand Design. All rights reserved.</p>
+    </div>
+    <div class="vertLine">
+    &nbsp;
+    </div>
+    <div class="printIcons">
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('healthbreakBrand') }" ng-click="changeDiv('healthbreakBrand')">
+        <img class="smallCircle" src="images/healthbreakBrandDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('pvamfBrand') }" ng-click="changeDiv('pvamfBrand')">
+        <img class="smallCircle" src="images/pvamfBrandDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('atlasLogos') }" ng-click="changeDiv('atlasLogos')">
+        <img class="smallCircle" src="images/atlasLogosDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('pointrfLogo') }" ng-click="changeDiv('pointrfLogo')">
+        <img class="smallCircle" src="images/pointrfLogoDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('ignitionmarketingLogos') }" ng-click="changeDiv('ignitionmarketingLogos')">
+        <img class="smallCircle" src="images/ignitionmarketingLogoDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('cafedelcampoLogos') }" ng-click="changeDiv('cafedelcampoLogos')">
+        <img class="smallCircle" src="images/cafedelcampoLogoDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('aquaventureLogos') }" ng-click="changeDiv('aquaventureLogos')">
+        <img class="smallCircle" src="images/aquaventureLogoDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('rogersLogo') }" ng-click="changeDiv('rogersLogo')">
+        <img class="smallCircle" src="images/rogersLogoDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('healthbreakProgramLogos') }" ng-click="changeDiv('healthbreakProgramLogos')">
+        <img class="smallCircle" src="images/healthbreakProgramLogosDot.jpg">
+      </span>
+    </div>
+    <p class="headline">BRAND</p>
+    <div ng-show="isCurrent('healthbreakProgramLogos')" class="portfolioDiv">
+      <p class="title">Healthbreak Wellness Program Campaign Logos</p>
+      <img class="portfolioImage" src="images/healthbreakProgramLogos.jpg">
+    </div>
+    <div ng-show="isCurrent('rogersLogo')" class="portfolioDiv">
+      <p class="title">Rogers Therapy Logo</p>
+      <img id="rogersLogoImage" src="images/rogersLogo.jpg">
+    </div>
+    <div ng-show="isCurrent('aquaventureLogos')" class="portfolioDiv">
+      <p class="title">AquaVenture Holdings Logo Design Options</p>
+      <img id="aquaventureLogosImage" src="images/aquaventureLogos.jpg">
+    </div>
+    <div ng-show="isCurrent('cafedelcampoLogos')" class="portfolioDiv">
+      <p class="title">Café del Campo Logo Design Options -Quench USA Cof-</p>
+      <img id="cafedelcampoLogosImage" src="images/cafedelcampoLogos.jpg">
+    </div>
+    <div ng-show="isCurrent('ignitionmarketingLogos')" class="portfolioDiv">
+      <p class="title">Ignition Marketing Logo</p>
+      <img class="portfolioImage" src="images/ignitionmarketingLogos.jpg">
+    </div>
+    <div ng-show="isCurrent('pointrfLogo')" class="portfolioDiv">
+      <p class="title">PointRF Logo</p>
+      <img id="pointrfLogoImage" src="images/pointrfLogo.jpg">
+    </div>
+    <div ng-show="isCurrent('atlasLogos')" class="portfolioDiv">
+      <p class="title">ATLAS Program Logo<br>Storage Technology Corporation Internal Department Logo</p>
+      <img class="portfolioImage" src="images/atlasLogos.jpg">
+    </div>
+    <div ng-show="isCurrent('pvamfBrand')" class="portfolioDiv">
+      <p class="title">Prairie View A&M Foundation Brand System</p>
+      <img class="portfolioImage" src="images/pvamfBrand.jpg">
+    </div>
+    <div ng-show="isCurrent('healthbreakBrand')" class="portfolioDiv">
+      <p class="title">Healthbreak Brand System</p>
+      <img class="portfolioImage" src="images/healthbreakBrand.jpg">
+    </div>
+  </body>
+  </html>

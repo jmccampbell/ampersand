@@ -108,7 +108,7 @@ hr.horizontal {
 }
 
 .icon:hover #printText,
-.active #printText {
+.iconActive #printText {
   color: #d99a6e;
 }
 
@@ -192,6 +192,30 @@ a {
 .portfolioImage {
   width: auto;
   max-height: 77vh;
+  max-width: 80vw;
+  margin-left: -2%;
+}
+
+#rogersLogoImage {
+  width: auto;
+  max-height: 60vh;
+  max-width: 80vw;
+  margin-left: -2%;
+  margin-top: 10px;
+}
+
+#aquaventureLogosImage,
+#cafedelcampoLogosImage {
+  width: auto;
+  max-height: 77vh;
+  max-width: 80vw;
+  margin-left: -2%;
+  margin-top: 10px;
+}
+
+#pointrfLogoImage {
+  width: auto;
+  max-height: 35vh;
   max-width: 80vw;
   margin-left: -2%;
 }
