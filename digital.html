@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Ampersand Design</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="portfolioCtrl.js"></script>
+<link rel="stylesheet" type="text/css" href="portfolio.css">
+</head>
+
+<body ng-app="app" ng-controller="printCtrl" ng-init="onload('digital')">
+    <div id="wrapper">
+      <img id="logo" src="images/ampersand-logo.jpg" width="167px" height="190px" alt="Ampersand Logo">
+      <nav> <!--start of navigation div-->
+          <ul id="nav">
+              <li><a href="contact.html" class="lastNav">CONTACT</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="print.html">WORK</a></li>
+              <li><a href="index.html">HOME</a></li>
+          </ul>
+      </nav> <!--end navigation div-->
+      <div class="icons">
+        <a href="tech.html">
+          <div class="icon">
+            <img id="circle" src="images/techCircle.jpg">
+            <p id="printText">TECH</p>
+          </div>
+        </a>
+        <a href="tradeShow.html">
+          <div class="icon">
+            <img id="circle" src="images/tradeshowCircle.jpg">
+            <p id="printText">LARGE</p>
+          </div>
+        </a>
+        <a href="digital.html">
+          <div class="icon iconActive">
+            <img id="circle" src="images/webCircle.jpg">
+            <p id="printText">DIGITAL</p>
+          </div>
+        </a>
+        <a href="brand.html">
+          <div class="icon">
+            <img id="circle" src="images/logosCircle.jpg">
+            <p id="printText">BRAND</p>
+          </div>
+        </a>
+        <a href="print.html">
+          <div class="icon">
+            <img id="circle" src="images/printCircle.jpg">
+            <p id="printText">PRINT</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <hr class="horizontal" />
+    <hr class="horizontal"/>
+    <div id="copyright">
+        <p class="copyright-text">&copy; 2016. Ampersand Design. All rights reserved.</p>
+    </div>
+    <div class="vertLine">
+    &nbsp;
+    </div>
+    <div class="printIcons">
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('quenchCoffeeInfographic') }" ng-click="changeDiv('quenchCoffeeInfographic')">
+        <img class="smallCircle" src="images/quenchCoffeeInfographicDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('quenchBottledWaterInfographic') }" ng-click="changeDiv('quenchBottledWaterInfographic')">
+        <img class="smallCircle" src="images/quenchBottledWaterInfographicDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('quenchPPT') }" ng-click="changeDiv('quenchPPT')">
+        <img class="smallCircle" src="images/quenchPPTDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('healthbreakPPT') }" ng-click="changeDiv('healthbreakPPT')">
+        <img class="smallCircle" src="images/healthbreakPPTDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('hunleyEmails') }" ng-click="changeDiv('hunleyEmails')">
+        <img class="smallCircle" src="images/hunleyEmailsDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('flatironsdermatologyWebsite') }" ng-click="changeDiv('flatironsdermatologyWebsite')">
+        <img class="smallCircle" src="images/flatironsdermatologyWebsiteDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('rogerstherapyWebsite') }" ng-click="changeDiv('rogerstherapyWebsite')">
+        <img class="smallCircle" src="images/rogerstherapyWebsiteDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('secureaireWebsite') }" ng-click="changeDiv('secureaireWebsite')">
+        <img class="smallCircle" src="images/secureaireWebsiteDot.jpg">
+      </span>
+      <span class="printIcon" ng-class="{ 'smallCircleActive': isCurrent('healthbreakWebsite') }" ng-click="changeDiv('healthbreakWebsite')">
+        <img class="smallCircle" src="images/healthbreaktWebsiteDot.jpg">
+      </span>
+    </div>
+    <p class="headline">DIGITAL</p>
+    <div ng-show="isCurrent('healthbreakWebsite')" class="portfolioDiv">
+      <p class="title">Healthbreak Corporate Website</p>
+      <img class="portfolioImage" src="images/healthbreakWebsite.jpg">
+    </div>
+    <div ng-show="isCurrent('secureaireWebsite')" class="portfolioDiv">
+      <p class="title">SecureAire Corporate Website</p>
+      <img class="portfolioImage" src="images/secureaireWebsite.jpg">
+    </div>
+    <div ng-show="isCurrent('rogerstherapyWebsite')" class="portfolioDiv">
+      <p class="title">Rogers Therapy Website</p>
+      <img class="portfolioImage" src="images/rogerstherapyWebsite.jpg">
+    </div>
+    <div ng-show="isCurrent('flatironsdermatologyWebsite')" class="portfolioDiv">
+      <p class="title">Flatirons Dermatology Website</p>
+      <img class="portfolioImage" src="images/flatironsdermatologyWebsite.jpg">
+    </div>
+    <div ng-show="isCurrent('hunleyEmails')" class="portfolioDiv">
+      <p class="title">The Hunley Group Email Header Images</p>
+      <img class="portfolioImage" src="images/hunleyEmails.jpg">
+    </div>
+    <div ng-show="isCurrent('healthbreakPPT')" class="portfolioDiv">
+      <p class="title">Healthbreak Sales Presentation (PowerPoint)</p>
+      <img class="portfolioImage" src="images/healthbreakPPT.jpg">
+    </div>
+    <div ng-show="isCurrent('quenchPPT')" class="portfolioDiv">
+      <p class="title">Quench Sales Presentation (PowerPoint)</p>
+      <img class="portfolioImage" src="images/quenchPPT.jpg">
+    </div>
+    <div ng-show="isCurrent('quenchBottledWaterInfographic')" class="portfolioDiv">
+      <p class="title">Quench Bottled Water Infographic</p>
+      <img class="infographic" src="images/quenchBottledWaterInfographic.jpg">
+    </div>
+    <div ng-show="isCurrent('quenchCoffeeInfographic')" class="portfolioDiv">
+      <p class="title">Quench Coffee Infographic</p>
+      <img class="infographic" src="images/quenchCoffeeInfographic.jpg">
+    </div>
+  </body>
+  </html>

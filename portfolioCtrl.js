@@ -14,6 +14,7 @@ angular
           break
 
         case "digital":
+          $scope.currentDiv = "healthbreakWebsite"
           break
 
         case "large":
